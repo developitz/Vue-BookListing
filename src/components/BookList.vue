@@ -2,7 +2,7 @@
   <div>
     <h1>{{title}}</h1>
     <ul>
-      <book-item v-for="book in books" :book="book"></book-item>
+      <book-item v-for="book in books" :book="book" @deleteBook="removeBook"></book-item>
     </ul>
     <hr>
     <book-form @addBook="appendBook"></book-form>
@@ -35,6 +35,13 @@
           title: bookTitle,
           author: bookAuthor,
         });
+      },
+      removeBook(book) {
+        const position = this.books.indexOf(book);
+
+        if (position > -1) {
+          this.books.splice(position, 1);
+        }
       },
     },
   };
