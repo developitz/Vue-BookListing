@@ -1,5 +1,5 @@
 <template>
-  <li>{{book.title}}:{{book.author}} <a class="delete" v-on:click.prevent="bookDelete(book)">x</a></li>
+  <li><strong>{{book.title}}:</strong> {{book.author}} <a class="delete" v-on:click.prevent="bookDelete(book)">x</a></li>
 </template>
 
 <script>

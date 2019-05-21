@@ -21,11 +21,11 @@
     },
     data() {
       return {
-        title: 'All Books',
+        title: 'Bücher',
         books: [
-          {title: 'Self-Reliance', author: 'Ralph Waldo Emerson'},
-          {title: 'American Gods', author: 'Neil Gaiman'},
-          {title: 'Amusing Ourselves to Death', author: 'Neil Postman'},
+          {title: 'Schwarzbuch', author: 'Der Killerwal'},
+          {title: 'Complete Guide To Single Malt Scotch', author: 'Michael Jackson'},
+          {title: 'Javascript für Dummies', author: 'Somebody'},
         ],
       };
     },
